@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Report | Suraksha Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page" >
+    <header class="site-header">
+        <h1>Suraksha | Admin Panel</h1>
+        <nav>
+            <a href="admin.html">Back to Dashboard</a>
+        </nav>
+    </header>
+    <main class="page-container">
+        <h2 id="report-title">Report Details</h2>
+        
+        <!-- Report Details Card -->
+        <div class="content-box" style="margin-bottom: 2em;">
+            <h3>Report Information</h3>
+            <div class="report-details-grid">
+                <div><strong>Report ID:</strong> <span id="detail-report-id"></span></div>
+                <div><strong>Date Submitted:</strong> <span id="detail-report-date"></span></div>
+                <div><strong>Status:</strong> <span id="detail-report-status" class="status"></span></div>
+                <div><strong>Assigned To:</strong> <span id="detail-report-counselor"></span></div>
+            </div>
+            <hr style="margin: 2em 0;">
+            <h3>Submitted Description</h3>
+            <p id="detail-report-description">Loading report details...</p>
+        </div>
+
+        <!-- Assign Counselor Card -->
+        <div class="content-box">
+            <h3>Assign Counselor</h3>
+            <form id="assign-counselor-form">
+                <p>Assign a new counselor to this report or update the existing assignment.</p>
+                <div class="input-group">
+                    <select id="counselor-select" class="input"></select>
+                </div>
+                <button type="submit" class="btn">Update Assignment</button>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

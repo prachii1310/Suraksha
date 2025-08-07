@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suraksha | Your Safe Space to Report and Heal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+<header>
+    <h1>Suraksha</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+
+      <a href="events.html">Events</a>
+      <a href="faq.html">FAQ</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="login.html" class="nav-button">Login</a>
+    </nav>
+</header>
+
+  <main>
+    <section class="hero">
+      <h2>Your Safe Space to Report Abuse</h2>
+      <p class="hero-subtitle"><span id="typed-strings"></span></p>
+      <button id="open-report-modal-btn" class="btn">Report an Incident Now</button>
+    </section>
+
+    <section class="page-section how-it-works hidden">
+      <h3 class="section-title">A Clear Path to Support</h3>
+      <div class="steps-container">
+        <div class="step">
+          <div class="step-icon"><i class="fa-solid fa-file-shield"></i></div>
+          <h4>1. Report Securely</h4>
+          <p>Submit your report anonymously through our encrypted form.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon"><i class="fa-solid fa-people-group"></i></div>
+          <h4>2. Connect with Help</h4>
+          <p>Your report is directed to a vetted counselor or NGO.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+          <h4>3. Begin Healing</h4>
+          <p>Access resources and professional help to start your recovery.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section testimonials hidden">
+      <h3 class="section-title">You Are Not Alone</h3>
+       <div class="testimonial-container">
+         <div class="testimonial-card"><p>"Using this platform was the first step I took towards getting my life back. Knowing it was anonymous gave me the courage to speak up."</p><span>- A Survivor</span></div>
+         <div class="testimonial-card"><p>"As a counselor, Suraksha provides a vital link to individuals we otherwise couldn't reach. It's an invaluable tool for community safety."</p><span>- Priya S., NGO Partner</span></div>
+       </div>
+    </section>
+
+    <section id="impact-section" class="page-section impact-numbers hidden">
+        <h3 class="section-title">Our Impact in Numbers</h3>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3 class="counter" data-target="1248">0</h3>
+                <p>Individuals Supported</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="counter" data-target="47">0</h3>
+                <p>Partner NGOs & Counselors</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="counter" data-target="5">0</h3>
+                <p>States Covered</p>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Suraksha Platform. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="about.html">About</a> | 
+        <a href="contact.html">Contact</a> | 
+        <a href="faq.html">FAQ</a> |
+        <a href="press-kit.html">Press Kit</a> |
+        <a href="privacy.html">Privacy</a> |
+        <a href="terms-of-service.html">Terms</a>
+    </div>
+  </footer>
+  <div id="report-modal" class="modal-container">
+  <div class="modal-content">
+    <button id="modal-close-btn" class="modal-close-btn">&times;</button>
+    <div class="form-container" style="margin: 0; box-shadow: none; padding: 1em 2em 2em 2em;">
+        <div id="form-content-modal">
+          <h2>Report an Incident</h2>
+          <p class="subtitle" style="margin-bottom: 2em;">Your report is confidential and secure.</p>
+          <form id="reportFormModal">
+            <div class="input-group">
+              <textarea class="input" placeholder=" " required></textarea>
+              <label class="label">Please describe the incident in detail...</label>
+            </div>
+            <div class="input-group">
+              <label class="custom-file-upload">Upload Evidence (Optional)</label>
+              <input type="file" />
+            </div>
+            <button type="submit">Submit Secure Report</button>
+          </form>
+        </div>
+        <div class="animated-success" id="animatedSuccessMessageModal" style="display: none;">
+          <lottie-player src="https://lottie.host/8816919e-e373-4977-8646-641f3f77366f/S3YRTiE2C0.json" background="transparent" speed="1" style="width: 150px; height: 150px; margin: 0 auto;" autoplay></lottie-player>
+          <h3>Report Submitted</h3>
+          <p>Thank you. Your report has been securely received.</p>
+        </div>
+    </div>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register | Suraksha</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="auth-container">
+    <!-- Branding Section (Left Side) -->
+    <div class="auth-branding">
+      <h1>Suraksha</h1>
+      <p>Create your secure account to report incidents and connect with support professionals.</p>
+    </div>
+
+    <!-- Form Section (Right Side) -->
+    <div class="auth-form-container">
+      <div class="auth-form-wrapper">
+        <h2>Create an Account</h2>
+        <form id="registerForm">
+          <div class="input-group">
+            <input type="text" id="register-name" class="input" placeholder=" " required />
+            <label for="register-name" class="label">Full Name</label>
+          </div>
+          <div class="input-group">
+            <input type="email" id="register-email" class="input" placeholder=" " required />
+            <label for="register-email" class="label">Email Address</label>
+          </div>
+          <div class="input-group">
+            <input type="password" id="register-password" class="input" placeholder=" " required />
+            <label for="register-password" class="label">Password</label>
+          </div>
+          <div class="input-group">
+            <input type="password" id="confirm-password" class="input" placeholder=" " required />
+            <label for="confirm-password" class="label">Confirm Password</label>
+          </div>
+          <input type="hidden" id="register-role" value="survivor">
+          <p id="register-error" class="form-error-message"></p>
+          <button type="submit">Create Account</button>
+        </form>
+        <p class="form-switch-link">
+          Already have an account? <a href="login.html">Login here</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | Suraksha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="auth-container">
+    <!-- Branding Section (Left Side) -->
+    <div class="auth-branding">
+      <h1>Suraksha</h1>
+      <p>Your secure and confidential space to find support and begin healing.</p>
+    </div>
+
+    <!-- Form Section (Right Side) -->
+    <div class="auth-form-container">
+      <div class="auth-form-wrapper">
+        <h2>Login to Your Account</h2>
+        <form id="loginForm">
+          <div class="input-group">
+            <input type="email" id="login-email" class="input" placeholder=" " required />
+            <label for="login-email" class="label">Email Address</label>
+          </div>
+          <div class="input-group">
+            <input type="password" id="login-password" class="input" placeholder=" " required />
+            <label for="login-password" class="label">Password</label>
+          </div>
+          <p id="login-error" class="form-error-message"></p>
+          <button type="submit">Login</button>
+        </form>
+        <p class="form-switch-link">
+          Don't have an account? <a href="register.html">Register here</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

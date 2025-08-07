@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard | Suraksha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page">
+    <header class="site-header">
+        <h1>Suraksha | Admin Panel</h1>
+        <nav>
+            <a href="index.html" id="logout-btn">Logout</a>
+        </nav>
+    </header>
+    <main class="page-container">
+        <h2 id="welcome-message">Welcome, Admin!</h2>
+        <p class="subtitle">Platform Overview and Management Tools.</p>
+        <div class="content-box">
+            <h3>Recent Reports</h3>
+            <div class="table-container">
+                <table id="admin-reports-table">
+                    <thead>
+                        <tr>
+                            <th>Report ID</th>
+                            <th>Date Submitted</th>
+                            <th>Status</th>
+                            <th>Assigned To</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- JavaScript will populate this area with reports -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report Abuse | Suraksha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <div class="form-container">
+    <div id="form-content">
+      <h2>Report an Incident</h2>
+      <p style="text-align:center; margin-top:-1em; margin-bottom: 2em; color: #616161;">Your report is confidential and secure.</p>
+      <form id="reportForm">
+        <div class="input-group">
+          <textarea id="description" class="input" placeholder=" " required></textarea>
+          <label for="description" class="label">Please describe the incident in detail...</label>
+        </div>
+        <div class="input-group">
+          <label for="file-upload" class="custom-file-upload">Upload Evidence (Optional)</label>
+          <input type="file" id="file-upload" accept="image/*,video/*,application/pdf" />
+          <span id="file-name"></span>
+        </div>
+        <button type="submit">Submit Secure Report</button>
+      </form>
+    </div>
+    
+    <div class="animated-success" id="animatedSuccessMessage" style="display: none;">
+        <lottie-player src="https://lottie.host/8816919e-e373-4977-8646-641f3f77366f/S3YRTiE2C0.json" background="transparent" speed="1" style="width: 150px; height: 150px; margin: 0 auto;" autoplay></lottie-player>
+        <h3>Report Submitted</h3>
+        <p>Thank you. Your report has been securely received. If you created an account, you can track its status on your dashboard.</p>
+        <a href="index.html" class="btn-secondary">Back to Home</a>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

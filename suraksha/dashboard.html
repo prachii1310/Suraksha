@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Dashboard | Suraksha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="dashboard-page">
+    <header class="site-header">
+        <h1>Suraksha</h1>
+        <nav>
+            <a href="#">Settings</a>
+            <a href="index.html" id="logout-btn">Logout</a>
+        </nav>
+    </header>
+    <main class="page-container">
+        <h2 id="welcome-message">Welcome!</h2>
+        <p class="subtitle">This is your personal and confidential space.</p>
+
+        <div class="dashboard-summary">
+            <div class="summary-card">
+                <i class="fas fa-file-alt"></i>
+                <div class="summary-text">
+                    <span class="summary-value">2</span>
+                    <span>Reports Submitted</span>
+                </div>
+            </div>
+            <div class="summary-card">
+                <i class="fas fa-envelope-open-text"></i>
+                <div class="summary-text">
+                    <span class="summary-value">1</span>
+                    <span>Unread Message</span>
+                </div>
+            </div>
+            <div class="summary-card">
+                <i class="fas fa-user-check"></i>
+                <div class="summary-text">
+                    <span class="summary-value">Assigned</span>
+                    <span>Counselor Status</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-box" style="margin-top: 3em;">
+            <h3>Recent Reports</h3>
+            <ul class="activity-list">
+                <li>
+                    <div class="activity-item">
+                        <span class="activity-title">Report #83451</span>
+                        <span class="activity-date">Aug 02, 2025</span>
+                    </div>
+                    <span class="status pending">Pending Review</span>
+                </li>
+                <li>
+                    <div class="activity-item">
+                        <span class="activity-title">Report #82199</span>
+                        <span class="activity-date">Jul 28, 2025</span>
+                    </div>
+                    <span class="status assigned">Counselor Assigned</span>
+                </li>
+            </ul>
+            <div class="dashboard-actions">
+                <a href="report.html" class="btn">File a New Report</a>
+                <a href="#" class="btn-secondary">View All Reports</a>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

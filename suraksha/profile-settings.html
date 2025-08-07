@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile Settings | Suraksha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Suraksha</h1><nav><a href="dashboard.html">Dashboard</a><a href="index.html">Logout</a></nav></header>
+  <main class="page-container">
+    <h2>Profile & Settings</h2>
+    <p class="subtitle">Manage your account information and preferences.</p>
+    <div class="form-container" style="margin-top: 0;">
+       <form id="profileForm">
+          <div class="input-group">
+            <input type="text" id="name" class="input" value="Sample User" placeholder=" " required />
+            <label for="name" class="label">Full Name</label>
+          </div>
+          <div class="input-group">
+            <input type="email" id="email" class="input" value="user@example.com" placeholder=" " required />
+            <label for="email" class="label">Email Address</label>
+          </div>
+           <div class="input-group">
+            <input type="password" id="password" class="input" placeholder=" " />
+            <label for="password" class="label">New Password (leave blank if no change)</label>
+          </div>
+          <button type="submit">Save Changes</button>
+       </form>
+    </div>
+    
+  </main>
+</body>
+</html>

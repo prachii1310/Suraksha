@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Suraksha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header>
+    <h1>Suraksha</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+ 
+      <a href="events.html">Events</a>
+      <a href="faq.html">FAQ</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="login.html" class="nav-button">Login</a>
+    </nav>
+</header>
+  <main class="page-container">
+    <h2>Contact Us</h2>
+    <p class="subtitle">For partnerships, media inquiries, or technical support, please reach out.</p>
+
+    <div class="content-box">
+        <p><strong>Please do not use this form to report an incident. For reporting abuse, please use the secure Report an Incident page.</strong></p>
+        <form id="contactForm">
+            <div class="input-group">
+                <input type="text" id="name" class="input" placeholder=" " required />
+                <label for="name" class="label">Your Name</label>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" class="input" placeholder=" " required />
+                <label for="email" class="label">Your Email</label>
+            </div>
+            <div class="input-group">
+                <textarea id="message" class="input" placeholder=" " required></textarea>
+                <label for="message" class="label">Your Message</label>
+            </div>
+            <button type="submit">Send Message</button>
+            <div class="form-success-message" id="formSuccessMessage">
+                Thank you for your message! We will get back to you shortly.
+            </div>
+        </form>
+    </div>
+    
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

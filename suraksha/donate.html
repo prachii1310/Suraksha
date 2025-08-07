@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate | Suraksha</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <header>
+    <h1>Suraksha</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="login.html" class="nav-button">Login</a>
+    </nav>
+  </header>
+
+  <main class="page-container">
+    <div class="form-container" style="max-width: 600px;">
+        <div id="donation-form-content">
+            <h2>Support Our Cause</h2>
+            <p class="subtitle" style="margin-bottom: 2em;">Your contribution helps us maintain the platform and support more survivors.</p>
+
+            <form id="donationForm">
+                <div class="donation-amount-selector">
+                    <button type="button" class="amount-btn" data-amount="500">₹500</button>
+                    <button type="button" class="amount-btn active" data-amount="1000">₹1000</button>
+                    <button type="button" class="amount-btn" data-amount="2500">₹2500</button>
+                </div>
+
+                <div class="input-group">
+                    <input type="number" id="custom-amount" name="amount" class="input" value="1000" placeholder=" " required />
+                    <label for="custom-amount" class="label">Or Enter Custom Amount (INR)</label>
+                </div>
+
+                <div class="payment-details">
+                    <p class="payment-warning"><i class="fas fa-info-circle"></i> This is a simulation. Do not enter real card details.</p>
+                    <div class="input-group">
+                        <input type="text" id="card-name" class="input" placeholder=" " required />
+                        <label for="card-name" class="label">Name on Card</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="card-number" class="input" placeholder=" " value="4242 4242 4242 4242" required />
+                        <label for="card-number" class="label">Card Number</label>
+                    </div>
+                    <div class="card-details-row">
+                        <div class="input-group">
+                            <input type="text" id="expiry-date" class="input" placeholder=" " value="12/26" required />
+                            <label for="expiry-date" class="label">Expiry (MM/YY)</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="cvv" class="input" placeholder=" " value="123" required />
+                            <label for="cvv" class="label">CVV</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" id="donate-submit-btn">Donate ₹1000 Securely</button>
+            </form>
+        </div>
+
+        <div class="animated-success" id="animatedSuccessMessage" style="display: none;">
+            <lottie-player src="https://lottie.host/8816919e-e373-4977-8646-641f3f77366f/S3YRTiE2C0.json" background="transparent" speed="1" style="width: 150px; height: 150px; margin: 0 auto;" autoplay></lottie-player>
+            <h3>Thank You for Your Support!</h3>
+            <p>Your generous contribution has been successfully processed. A confirmation receipt will be sent to your email (simulation).</p>
+            <a href="index.html" class="btn-secondary">Back to Home</a>
+        </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
